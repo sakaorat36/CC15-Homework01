@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        .row{
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px 30px;
+            border-radius: 10px;
+            width: 350px;
+        }
+        .name, .email{
+            width: 220px;
+        }
+        select{
+            width: 220px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="education.html">Education</a> |
+        <a href="work.html">Work Experience</a> |
+        <a href="contact.html">Contact Me</a> |
+    </nav>
+    <hr />
+    <h1>Contact Me</h1>
+    <div class="row">
+        <form>
+            <p>Enter your info..</p>
+            <label>
+                Your name
+                <br><input class="name" id="fname" name="fname"><br>
+            </label>
+            <br>
+            <label for="lname">
+                Your E-mail
+                <br><input class="email" id="lname" name="lname"><br>
+            </label>
+            <br>
+            <label for="gender">
+                Gender
+            </label> <br>
+            <select name="gender" id="gender">
+                <option value="">select..</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <p>Message</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+        </form>
+    </div>
+</body>
+
+</html>
